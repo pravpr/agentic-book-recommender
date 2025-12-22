@@ -144,3 +144,31 @@ python evaluate_agent.py
 
 - `evaluate_agent.py`  
   Loads `feedback.csv` and prints simple evaluation metrics.
+
+
+## Architecture
+
+subgraph DataPrep["Data Preparation & Embeddings"]
+    A["Goodbooks-10k<br/>books.csv + ratings.csv"]
+    B["prepare_goodbooks_subset.py<br/>→ books_subset.csv"]
+    C["build_book_embeddings.py<br/>SentenceTransformer<br/>→ book_embeddings.npy"]
+    A --> B --> C
+end
+
+subgraph AgentRuntime["Agent Runtime"]
+    U["User Input<br/>Book you like"]
+    F["find_book_index_by_title"]
+    T1["tool_recommend_books<br/>cosine similarity"]
+    R["reflect_and_adjust<br/>rating filter + diversity"]
+    OUT["Final Recommendations"]
+    FBQ["User Feedback y/n"]
+    T2["log_feedback<br/>→ feedback.csv"]
+end
+
+subgraph Evaluation["Evaluation"]
+    E["evaluate_agent.py<br/>Reads feedback.csv<br/>→ metrics"]
+end
+
+C --> T1
+U --> F --> T1 --> R --> OUT --> FBQ --> T2
+T2 --> E
