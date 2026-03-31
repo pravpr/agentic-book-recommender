@@ -54,13 +54,7 @@ FINAL RECOMMENDATIONS: [numbered list]"
     response = llm.invoke(prompt)
     return response
 
-print("\n🎯 CAPSTONE REQUIREMENTS ✓")
-print("✅ Data Prep: Goodbooks-10k + embeddings")
-print("✅ RAG: Vector similarity tool") 
-print("✅ Reasoning: Ollama LLM analysis")
-print("✅ Tools: retrieve_similar_books() + log_feedback()")
-print("✅ Reflection: LLM self-analysis")
-print("✅ Evaluation: feedback.csv ✓")
+
 print("\n📖 Try: 'Hunger Games', 'Harry Potter', '1984'\n")
 
 if __name__ == "__main__":
