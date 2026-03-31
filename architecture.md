@@ -1,0 +1,19 @@
+# Agentic Book Recommender Architecture
+
+```mermaid
+flowchart TD
+    A[Goodbooks-10k Dataset] --> B[books_subset.csv]
+    B --> C[SentenceTransformer Embeddings]
+    C --> D[retrieve_similar_books Tool]
+    
+    E[User Query] --> F["Ollama llama3.2:1b LLM"]
+    F --> G["agent_reasoning<br/>Analysis + Reflection"]
+    G --> H[log_user_feedback Tool]
+    H --> I[feedback.csv]
+    I --> J[Evaluation Metrics]
+    
+    D -.-> G
+    
+    style F fill:#e1f5fe
+    style G fill:#f3e5f5
+```
