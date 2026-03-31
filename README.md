@@ -40,4 +40,7 @@ ollama pull llama3.2:1b
 
 # 3. Run agent
 python recommendation_agent.py
+
+# 4. Run evaluate agent
+python evaluate_agent.py
 ```
