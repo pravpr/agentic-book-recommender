@@ -31,7 +31,7 @@ Documentation: Markdown (README.md, architecture.md)
 
 ```bash
 # 1. Clone + install
-git clone https://github.com/YOUR_USERNAME/agentic-book-recommender
+git clone https://github.com/pravpr/agentic-book-recommender
 cd agentic-book-recommender
 pip install -r requirements.txt
 
