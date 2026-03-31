@@ -1,36 +1,37 @@
 
-## Architecture
+## 🏗️ Architecture
+
 ```mermaid
 flowchart TD
-    A[Goodbooks-10k] --> B[books_subset.csv]
-    B --> C[SentenceTransformer<br/>Embeddings]
+    A[Goodbooks-10k Dataset] --> B[books_subset.csv]
+    B --> C[SentenceTransformer Embeddings]
     C --> D[retrieve_similar_books Tool]
-    E[User Query] --> F[Ollama llama3.2:1b]
-    F --> G[agent_reasoning<br/>Analysis + Reflection]
+    
+    E[User Query] --> F["Ollama<br/>llama3.2:1b LLM"]
+    F --> G["agent_reasoning<br/>Analysis + Reflection"]
     G --> H[log_user_feedback Tool]
     H --> I[feedback.csv]
     I --> J[Evaluation Metrics]
     
+    D -.-> G
+    
     style F fill:#e1f5fe
+    style G fill:#f3e5f5
 ```
 
-## Tech Stack
+## 🛠️ Tech Stack
+
 | Component | Technology |
 |-----------|------------|
-| LLM | Ollama llama3.2:1b |
-| RAG | Cosine similarity |
-| Reasoning | LLM prompt engineering |
-| Tools | Python functions |
-| Evaluation | Pandas metrics |
+| **LLM** | Ollama llama3.2:1b (Meta) |
+| **RAG** | Cosine similarity + embeddings |
+| **Reasoning** | LLM prompt engineering |
+| **Tools** | Python `@tool` functions |
+| **Data** | Goodbooks-10k (10K books) |
+| **Evaluation** | Pandas + acceptance rate |
 
-## Files
-- `recommendation_agent.py`: Main agent
-- `feedback_tools.py`: CSV logging
-- `evaluate_agent.py`: Metrics
-- `books_subset.csv & book_embeddings.npy`: Preprocessed Goodbooks-10k
+## 📊 Evaluation Results
 
-## Evaluation Metrics
 ```bash
 python evaluate_agent.py
-# Acceptance rate: 82% | Likes: 12/15
 ```
