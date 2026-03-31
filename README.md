@@ -2,7 +2,6 @@
 
 **Agentic AI system** with **Ollama LLM + RAG + Reasoning + Evaluation**:
 
-[![Architecture](architecture.png)](architecture.mmd)
 
 
 ## 🚀 Quick Start (Mentor Test - 3 minutes)
@@ -13,11 +12,11 @@ git clone https://github.com/YOUR_USERNAME/agentic-book-recommender
 cd agentic-book-recommender
 pip install -r requirements.txt
 
-# 2. Ollama (one-time)
+# 2. Ollama (one-time setup)
 ollama pull llama3.2:1b
 
 # 3. Run agent
 python recommendation_agent.py
 ```
 
-**Live Demo:**
+**Live Demo Output:**
