@@ -27,7 +27,7 @@ Environment: Python venv (Windows local)
 Documentation: Markdown (README.md, architecture.md)
 
 
-## 🚀 Quick Start (Mentor Test - 3 minutes)
+## 🚀 Quick Start
 
 ```bash
 # 1. Clone + install
