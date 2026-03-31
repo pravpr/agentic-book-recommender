@@ -9,3 +9,18 @@ timestamp,user_id,query_title,recommended_title,liked
 2026-03-31T01:14:37.291974,capstone_user,Harry Potter,"Harry Potter and the Order of the Phoenix (Harry Potter, #5)",0
 2026-03-31T01:14:37.967871,capstone_user,Harry Potter,"Harry Potter and the Deathly Hallows (Harry Potter, #7)",0
 2026-03-31T01:14:38.714872,capstone_user,Harry Potter,"Harry Potter and the Half-Blood Prince (Harry Potter, #6)",0
+2026-03-31T06:30:39.566261,capstone_user,Hunger Games,"Mockingjay (The Hunger Games, #3)",1
+2026-03-31T06:30:41.181675,capstone_user,Hunger Games,"Catching Fire (The Hunger Games, #2)",1
+2026-03-31T06:30:42.886907,capstone_user,Hunger Games,"The Hunger Games Trilogy Boxset (The Hunger Games, #1-3)",0
+2026-03-31T06:30:43.695421,capstone_user,Hunger Games,The Hunger Games Tribute Guide,0
+2026-03-31T06:30:44.543468,capstone_user,Hunger Games,"Hunger (Gone, #2)",0
+2026-03-31T06:34:03.269340,capstone_user,Harry Potter,"Harry Potter and the Chamber of Secrets (Harry Potter, #2)",1
+2026-03-31T06:34:07.229937,capstone_user,Harry Potter,"Harry Potter and the Goblet of Fire (Harry Potter, #4)",0
+2026-03-31T06:34:07.881396,capstone_user,Harry Potter,"Harry Potter and the Order of the Phoenix (Harry Potter, #5)",0
+2026-03-31T06:34:08.445123,capstone_user,Harry Potter,"Harry Potter and the Deathly Hallows (Harry Potter, #7)",0
+2026-03-31T06:34:09.099745,capstone_user,Harry Potter,"Harry Potter and the Half-Blood Prince (Harry Potter, #6)",0
+2026-03-31T06:35:47.682361,capstone_user,1984,Animal Farm,1
+2026-03-31T06:35:48.921009,capstone_user,1984,Animal Farm / 1984,0
+2026-03-31T06:35:49.871717,capstone_user,1984,A People's History of the United States,0
+2026-03-31T06:35:51.113182,capstone_user,1984,Brave New World,0
+2026-03-31T06:35:51.895842,capstone_user,1984,Freedom,0
