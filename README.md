@@ -1,7 +1,7 @@
 # Agentic Book Recommender
 
-**Agentic AI system** with **Ollama LLM + RAG + Reasoning + Evaluation**:
-**Technology Stack**
+## Technology Stack
+
 LLM: Ollama llama3.2:1b (local)
 
 Embeddings: SentenceTransformer all-MiniLM-L6-v2
